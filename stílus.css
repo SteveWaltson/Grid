@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+}
+
+.tarolo,
+.felec,
+.tartalom,
+.lablec {
+  border: 1px solid brown;
+  padding: 10px;
+}
+.tarolo {
+  background-color: whitesmoke;
+}
+.tarolo {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+img{
+  width:100%;
+  border: 1px solid burlywood;
+  border-radius:10px;
+  padding:10px;
+}
+.kep{
+  width:100%;
+  border:5px solid red;
+  border-radius:10px;
+  padding:10px;
+}
+.tartalom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+/*Reszponzív oldal: olyan weblap, amely minden eszközön jól néz ki, olvasható.*/
+/*Töréspontok segítségével: media query*/
+
+@media screen and (max-width: 600px){
+  .tarlaom {
+    grid-template-columns: 1fr;
+  }
+  .tarolo  {
+    width: 100%;
+  }
+}
